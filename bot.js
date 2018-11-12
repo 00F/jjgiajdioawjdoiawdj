@@ -15,21 +15,24 @@ client.on('message', message => {
 
 if (message.content.startsWith('.2')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
+  client.user.setStatus("dnd")
     message.channel.send(`${argresult} \` `)
 } else 
 if (message.content.startsWith('.1')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
+  client.user.setStatus("dnd")
     message.channel.send(` ${argresult} \` `)
 } else 
 if (message.content.startsWith('.3')) {
   client.user.setGame(argresult, "https://www.twitch.tv/MeeRcY");
+  client.user.setStatus("dnd")
    message.channel.send(`${argresult} \` `)
 }
 });
 
 client.on('message', message => {
         if (!developers.includes(message.author.id)) return;
-  if (message.content === '712') {
+  if (message.content === '..1') {
   let channel = client.channels.get('511456874281959425');
 
   channel.join()
