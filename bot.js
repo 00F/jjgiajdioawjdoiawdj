@@ -13,17 +13,17 @@ client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!developers.includes(message.author.id)) return;
 
-if (message.content.startsWith('.2')) {
+if (message.content.startsWith('2Wt')) {
 client.user.setActivity(argresult, {type:'WATCHING'});
   client.user.setStatus("dnd")
     message.channel.send(`${argresult} \` `)
 } else 
-if (message.content.startsWith('.1')) {
+if (message.content.startsWith('1Ls')) {
 client.user.setActivity(argresult , {type:'LISTENING'});
   client.user.setStatus("dnd")
     message.channel.send(` ${argresult} \` `)
 } else 
-if (message.content.startsWith('.3')) {
+if (message.content.startsWith('3St')) {
   client.user.setGame(argresult, "https://www.twitch.tv/MeeRcY");
   client.user.setStatus("dnd")
    message.channel.send(`${argresult} \` `)
