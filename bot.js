@@ -30,7 +30,7 @@ if (message.content.startsWith('.3')) {
 client.on('message', message => {
         if (!developers.includes(message.author.id)) return;
   if (message.content === '712') {
-  let channel = client.channels.get('444873938691031040');
+  let channel = client.channels.get('511456874281959425');
 
   channel.join()
   .then(connection => console.log('Connected'))
